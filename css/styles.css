@@ -883,6 +883,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 }
 
 .form-input-text {
@@ -994,9 +995,9 @@ img {
 
 /* --- Почему не меняется цвет? --*/
 
-.input-check:checked + .input-check-text {
+/* .input-check:checked + .input-check-text {
   color: #ffffff;
-}
+} */
 
 .close-btn:hover,
 .close-btn:focus {
@@ -1007,8 +1008,8 @@ img {
 /*----Кастомный чекбокс----*/
 
 .input-check-text {
-  display: inline-block;
-  align-content: center;
+  display: flex;
+  align-items: center;
   margin-top: 10px;
   margin-right: 1px;
 
@@ -1021,15 +1022,7 @@ img {
 }
 
 .check-icon {
-  display: inline-block;
-  margin-right: 8.38px;
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  border: 2px solid #212121;
   fill: #ffffff;
-  background-size: contain;
-  background-origin: border-box;
 }
 
 .input-check:checked + .check-icon {
@@ -1047,4 +1040,20 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8.38px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid #212121;
+  overflow: hidden;
+}
+
+textarea {
+  outline: none;
 }
