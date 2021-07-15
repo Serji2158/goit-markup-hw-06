@@ -682,11 +682,8 @@ img {
 
 .social-footer {
   display: flex;
-  margin-top: 72px;
-  margin-left: 70px;
   flex-direction: column;
   justify-content: flex-start;
-  margin-right: 678px;
   margin-top: 72px;
   margin-bottom: 100px;
   margin-left: 70px;
@@ -743,6 +740,81 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--text-color-white);
+}
+
+.footer-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 72px;
+  /* margin-right: 678px; */
+  margin-bottom: 94px;
+  margin-left: 93px;
+}
+
+.footer-input-items {
+  display: flex;
+  align-items: center;
+}
+
+.footer-input-mail + .footer-input-btn {
+  margin-left: 12px;
+}
+
+.footer-input-mail {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #2f303a;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-input-mail::placeholder {
+  width: 47px;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input-btn {
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.footer-input-icon {
+  margin-left: 10px;
+
+  fill: #ffffff;
 }
 
 /*-----------Backdrop----------------------*/
