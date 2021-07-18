@@ -712,6 +712,11 @@ img {
   margin-left: 10px;
 }
 
+.social-footer-links-list:hover,
+.social-footer-links-list:focus {
+  background-color: var(--WEB-BG-color);
+}
+
 .social-footer-links-list {
   width: 44px;
   height: 44px;
@@ -729,11 +734,6 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   background-position: center;
   cursor: pointer;
-}
-
-.social-footer-links-list:hover,
-.social-footer-links-list:focus {
-  background-color: var(--WEB-BG-color);
 }
 
 .social-footer-items-icon {
